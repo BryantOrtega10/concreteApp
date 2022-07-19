@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./../../assets/fonts/Roboto-Medium.ttf);
+    font-weight: 700;
+}
+.ticket-item-container{
+    background: #F7F7F7;
+    border-radius: 6px;
+    height: 60px;
+    margin-bottom: 16px;
+}
+
+.ticket-item-label {
+    color: #A0A0A0;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+}
+
+b.ticket-item-b {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #5C5C5C;
+}
+
+.ticket-item-label.color-verde {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #0BE50A;
+}
+
+.ticket-item-container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ticket-item-status{
+    text-align: center;
+}
+.container-rejection {
+    background: #FFEBEB;
+    border-radius: 6px;
+    padding: 11px 8px;
+    color: #F93232;
+    margin-bottom: 16px;
+}
+
+.container-rejection p {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.container-rejection b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+}

@@ -1,0 +1,44 @@
+
+.pageview-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+h1.pageview-title {
+    font-family: 'Sailec', sans-serif;
+    font-size: 25px;
+    color: #6C6C6C;
+    margin: 0;
+}
+
+h1.pageview-title span {
+    color: #0BE50A;
+}
+
+p.pageview-text{
+    
+    font-family: 'Roboto', sans-serif;
+    max-width: 80%;
+    font-size: 16px;
+    color: #9E9E9E;
+    margin: 0;
+}
+
+.pageview-container-button{
+    position: absolute;
+    bottom: 24px;
+    width: calc(100% - 32px);
+    left: 16px;
+}
+.pageview-container-button ion-button{
+    font-family: 'Sailec', sans-serif;
+    text-transform: none;
+    font-size: 16px;
+    min-height: 50px;
+}

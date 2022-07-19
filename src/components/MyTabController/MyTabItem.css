@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./../../assets/fonts/Roboto-Black.ttf);
+    font-weight: 900;
+}
+
+.container-tab-item {
+    overflow: hidden;
+    max-width: 36px;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 9px;
+    border-radius: 24px;
+    transition: all 0.7s;
+}
+
+.container-tab-item.active {
+    max-width: 50%;
+    background: #D8FFD8;
+    padding-right: 14px;
+}
+
+.tab-item-title{
+    color: #0BE50A;
+    font-family: 'Roboto';
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    -font-smoothing: antialiased;
+}
+
+.container-tab-item-image {
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+}
+
+img.tab-item-image {
+    max-width: 24px;
+}

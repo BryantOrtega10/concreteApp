@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./../../assets/fonts/Roboto-Medium.ttf);
+    font-weight: 700;
+}
+.deduction-item-container{
+    background: #F7F7F7;
+    border-radius: 6px;
+    
+    margin-bottom: 16px;
+    padding: 0 10px;
+}
+
+.deduction-item-label {
+    color: #A0A0A0;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+}
+
+b.deduction-item-b {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #5C5C5C;
+}
+
+.deduction-item-label.color-verde {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #0BE50A;
+}
+
+.deduction-item-container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.deduction-item-status{
+    text-align: left;
+}
+.container-rejection {
+    background: #FFEBEB;
+    border-radius: 6px;
+    padding: 11px 8px;
+    color: #F93232;
+    margin-bottom: 16px;
+}
+
+.container-rejection p {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.container-rejection b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+}
+b.ticket-item-b.b-status {
+    font-size: 15px;
+}
+
+.deduction-item-value {
+    background: #0BE50A;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    min-height: 40px;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    align-items: center;
+}
+
+.deduction-item-value-label {
+    display: inline-block;
+}

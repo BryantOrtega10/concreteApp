@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./../../../assets/fonts/Roboto-Medium.ttf);
+    font-weight: 700;
+}
+
+.tickets-detail-container-int {
+    background: #F5F5F5;
+    border-radius: 6px;
+    padding: 16px;
+}
+.tickets-detail-container {
+    padding: 16px;
+}
+
+.tickets-detail-description {
+    margin-bottom: 15px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    color: #434343;
+    margin-top: 8px;
+}
+
+.tickets-detail-container-int b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #AAAAAA;
+}
+.tickets-detail-container-int b.tickets-detail-state {
+    color: var(--ion-color-primary);
+}
+
+
+.container-state {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-state img {
+    margin-right: 10px;
+}

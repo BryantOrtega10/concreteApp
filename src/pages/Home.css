@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Sailec';
+    src: url(./../assets/fonts/Sailec_Bold.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(./../assets/fonts/Roboto-Regular.ttf);
+}
+
+ion-slides {
+    height: 100%;
+}
+.pageViewInicio{
+    height: 100%;
+}

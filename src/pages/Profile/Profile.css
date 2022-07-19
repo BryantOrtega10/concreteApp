@@ -1,0 +1,51 @@
+.profile-title{
+    text-align: center;
+}
+.profile-inputs-container{
+    padding: 0 16px;
+}
+
+.profile-inputs-container ion-input{
+    font-size: 16px;
+}
+.label-profile{
+    font-size: 16px;
+    font-family: 'Sailec', sans-serif;
+    color: #6B6B6B;
+}
+.item-has-focus .label-profile{
+    color: var(--ion-color-primary);
+}
+
+.profile-note{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--ion-color-primary);
+    padding-left: 16px;
+}
+
+.profile-button-container ion-button{
+    font-family: 'Sailec', sans-serif;
+    text-transform: none;
+    font-size: 16px;
+    min-height: 50px;
+    margin: auto;
+    margin-top: 25px;
+    width: 70%;
+    
+    
+}
+
+.profile-button-container.sign-out ion-button{
+    font-family: 'Sailec', sans-serif;
+    text-transform: none;
+    font-size: 16px;
+    min-height: 50px;
+    margin: auto;
+    margin-top: 25px;
+    width: 70%;
+    
+    
+}

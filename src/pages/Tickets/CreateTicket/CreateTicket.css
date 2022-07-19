@@ -1,0 +1,72 @@
+.create-tickets-container ion-input{
+    font-size: 16px;
+}
+.label-create-ticket{
+    font-size: 18px;
+    font-family: 'Sailec', sans-serif;
+    color: #6B6B6B;
+}
+.item-has-focus .label-create-ticket{
+    color: var(--ion-color-primary);
+}
+
+.container-upload-file {
+    height: 120px;
+    border: 2px dashed #B9B9B9;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 24px;
+}
+
+.create-tickets-container {
+    padding: 0 16px;
+}
+
+.container-upload-file .upload-file {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #F5F5F5;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.remove-image {
+    position: absolute;
+    right: 0;
+    width: 20%;
+    background: rgba(255, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-upload ion-button {
+    color: #A9A9A9;
+    border: 1px solid #000;
+    border-radius: 3px;
+    border: 1.5px solid #DEDEDE;
+}
+
+
+img.ico-upload {
+    margin-right: 12px;
+}
+
+span.upload-text {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+
+.create-ticket-button ion-button{
+    font-family: 'Sailec', sans-serif;
+    text-transform: none;
+    font-size: 16px;
+    min-height: 50px;
+    margin-top: 25px ;
+    margin-bottom: 25px ;
+}

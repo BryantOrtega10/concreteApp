@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./../../assets/fonts/Roboto-Medium.ttf);
+    font-weight: 700;
+}
+
+
+.container-tickets-header {
+    text-align: center;
+}
+
+.label-tickets {
+    font-size: 15px;
+    font-family: 'Sailec', sans-serif;
+    color: #6B6B6B;
+}
+.container-filter-tickets{
+    padding: 0 16px;
+}
+
+.container-filter-tickets h3 {
+    font-family: 'Roboto';
+    color: #0BE50A;
+    margin: 0;
+    font-weight: 700;
+    padding: 10px 0px;
+    padding-top: 18px;
+    font-size: 18px;
+}
+
+.row-tickets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.col-tickets{
+    padding: 0 8px;
+}
+
+.col-6-tickets {
+    width: 50%;    
+}
+.col-12-tickets {
+    width: 100%;    
+}
+
+.col-tickets ion-list {
+    padding-top: 0;
+}
+
+.col-tickets:first-child {
+    padding-left: 0;
+}
+
+.col-tickets:last-child {
+    padding-right: 0;
+}
+
+.searchBtn {
+    font-family: 'Sailec', sans-serif;
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+}
+
+.container-list-tickets{
+    padding: 0 16px;
+}
+
+.container-list-tickets h1{
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+
+.container-tickets {
+    padding-bottom: 120px;
+}

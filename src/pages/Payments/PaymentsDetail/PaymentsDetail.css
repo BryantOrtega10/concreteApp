@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./../../../assets/fonts/Roboto-Medium.ttf);
+    font-weight: 700;
+}
+
+.payment-detail-container-int {
+    background: #F5F5F5;
+    border-radius: 6px;
+    padding: 16px;
+}
+.payment-detail-container {
+    padding: 16px;
+}
+
+.payment-detail-description {
+    margin-bottom: 15px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    color: #434343;
+    margin-top: 8px;
+}
+
+.payment-detail-container-int b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #AAAAAA;
+}
+.payment-detail-container-int b.payment-detail-state {
+    color: var(--ion-color-primary);
+}
+
