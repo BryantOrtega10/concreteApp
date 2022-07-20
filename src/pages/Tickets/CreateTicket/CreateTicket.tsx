@@ -28,16 +28,26 @@ const CreateTicket: React.FC = () => {
     takePicture();
   }
 
-  const parseLocaleNumber = (stringNumber: string) => {
-    var thousandSeparator = Intl.NumberFormat().format(11111).replace(/\p{Number}/gu, '');
-    var decimalSeparator = Intl.NumberFormat().format(1.1).replace(/\p{Number}/gu, '');
+  // const parseLocaleNumber = (stringNumber: string) => {
+  //   var thousandSeparator = Intl.NumberFormat().format(11111).replace(/\p{Number}/gu, '');
+  //   var decimalSeparator = Intl.NumberFormat().format(1.1).replace(/\p{Number}/gu, '');
+
+  //   return parseFloat(stringNumber
+  //     .replace(new RegExp('\\$', 'g'), '')
+  //     .replace(new RegExp('\\' + thousandSeparator, 'g'), '')
+  //     .replace(new RegExp('\\' + decimalSeparator), '.')
+  //   );
+  // }
+  const parseLocaleNumber = (stringNumber :string, locale: string = 'en-US') => {
+    var thousandSeparator = Intl.NumberFormat(locale).format(11111).replace(/\p{Number}/gu, '');
+    var decimalSeparator = Intl.NumberFormat(locale).format(1.1).replace(/\p{Number}/gu, '');
 
     return parseFloat(stringNumber
-      .replace(new RegExp('\\$', 'g'), '')
-      .replace(new RegExp('\\' + thousandSeparator, 'g'), '')
-      .replace(new RegExp('\\' + decimalSeparator), '.')
+        .replace(new RegExp('\\$', 'g'), '')
+        .replace(new RegExp('\\' + thousandSeparator, 'g'), '')
+        .replace(new RegExp('\\' + decimalSeparator), '.')
     );
-  }
+}
 
 
   const [materials, setMaterials] = useState<MaterialsModel[]>([]);
@@ -572,7 +582,7 @@ const CreateTicket: React.FC = () => {
             </IonItem>
             <IonItem>
               <IonLabel position="floating"><label className='label-create-ticket'>Material</label></IonLabel>
-              <IonSelect value={material} placeholder="Select One" interface="popover" onIonChange={e => setMaterial(e.detail.value)}>
+              <IonSelect value={material} placeholder="Select One" onIonChange={e => setMaterial(e.detail.value)}>
                 {materials.map((material, index) => {
                   return (<IonSelectOption value={material.id} key={`material_${index}`}>{material.name}</IonSelectOption>);
                 })}
@@ -580,7 +590,7 @@ const CreateTicket: React.FC = () => {
             </IonItem>
             <IonItem>
               <IonLabel position="floating"><label className='label-create-ticket'>Pickup</label></IonLabel>
-              <IonSelect value={pickup} placeholder="Select One" interface="popover" onIonChange={onChangePickup}>
+              <IonSelect value={pickup} placeholder="Select One" onIonChange={onChangePickup}>
                 {pickups.map((pickup_item, index) => {
                   return <IonSelectOption value={pickup_item.name} key={`pickup_item_${index}`}>{pickup_item.name}</IonSelectOption>
                 })}
@@ -588,7 +598,7 @@ const CreateTicket: React.FC = () => {
             </IonItem>
             <IonItem>
               <IonLabel position="floating"><label className='label-create-ticket'>Delivery</label></IonLabel>
-              <IonSelect value={deliver} placeholder="Select One" interface="popover" onIonChange={onChangeDeliver}>
+              <IonSelect value={deliver} placeholder="Select One" onIonChange={onChangeDeliver}>
                 {delivers.map((deliver_item, index) => {
                   return <IonSelectOption value={deliver_item.name} key={`deliver_item_${index}`}>{deliver_item.name}</IonSelectOption>
                 })}
