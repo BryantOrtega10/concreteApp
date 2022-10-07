@@ -19,6 +19,7 @@ const Tickets: React.FC = () => {
   const ionTxtTicketNumber = useRef<HTMLIonInputElement>(null);
   const [data, setData] = useState<TicketListItemModel[]>([]);
   const [isInfiniteDisabled, setInfiniteDisabled] = useState(false);
+  const [reloadData, setRealoadData] = useState(false);
   const [presentLoading, dismissLoading] = useIonLoading();
   const history = useHistory()
   /* Methods */
@@ -32,12 +33,16 @@ const Tickets: React.FC = () => {
   const onClickSearch = () => {
     setInfiniteDisabled(false);
     setPage(0);
-    const temp = [...data];
-    temp.splice(0, temp.length);
-    setData(temp);
-    pushData(0);    
+    setData(prev => prev.filter(element => false))    
+    setRealoadData(true);
   }
 
+  useEffect(() => {
+    if(data.length == 0 && reloadData){
+      pushData(0);
+      setRealoadData(false);
+    }
+  }, [data, reloadData]);
   
   /*Services*/
   const pushData = (page:number, ev?: any) => {
@@ -55,7 +60,7 @@ const Tickets: React.FC = () => {
     }).then(response => response.json())
     .then(result => {      
       if(page == 0) dismissLoading();
-        
+      console.log(data);
       
       setPage(page+1);
       console.log(result, page);

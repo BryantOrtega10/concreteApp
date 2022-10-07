@@ -18,6 +18,7 @@ const Deductions: React.FC = () => {
 
   const [deductionTypes, setDeductionTypes] = useState<DeductionTypesModel[]>([]);
 
+  const [reloadData, setRealoadData] = useState(false);
 
   const [data, setData] = useState<DeductionItemModel[]>([]);
   const [isInfiniteDisabled, setInfiniteDisabled] = useState(false);
@@ -25,12 +26,16 @@ const Deductions: React.FC = () => {
   const onClickSearch = () => {
     setInfiniteDisabled(false);
     setPage(0);    
-    const temp = [...data];
-    temp.splice(0, temp.length);
-    setData(temp);
-
-    pushData(0);    
+    setData(prev => prev.filter(element => false))    
+    setRealoadData(true);
   }
+
+  useEffect(() => {
+    if(data.length == 0 && reloadData){
+      pushData(0);
+      setRealoadData(false);
+    }
+  }, [data, reloadData]);
 
   /*Services*/
   const pushData = (page:number, ev?: any) => {

@@ -1,4 +1,4 @@
-export const SERVER = "https://concrete.web-html.com";
+export const SERVER = "https://tickettraxx.com";
 export const API_LOGIN = SERVER + "/api/contractor/login";
 export const API_TICKETS = SERVER + "/api/tickets_contractor";
 export const API_GET_CONTRACTOR = SERVER + "/api/contractor/info";
